@@ -33,9 +33,11 @@ Despues puede correrlo con el siguiente comando, ubicandose en la carpeta raiz, 
 ```
     java -cp "./target/classes/" edu.escuelaing.arsw.App loc src/test/java/edu/escuelaing/arsw/prueba1.java
 ```
+![](img/img1.png)
 
 Otra forma pra correrlo, ya generado el JAR, es con el siguiente comando
 
 ```
     java -cp "target/psp0-1.0-SNAPSHOT.jar" edu.escuelaing.arsw.App loc src/test/java/edu/escuelaing/arsw/prueba1.java
 ```
+![](img/img2.png)
