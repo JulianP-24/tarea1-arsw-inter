@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Hello world!
+ * Clase principal para correr la aplicacion
  *
  */
 public class App 
