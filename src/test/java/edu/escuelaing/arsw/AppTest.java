@@ -56,7 +56,7 @@ public class AppTest
         lineCounter lc = new lineCounter();
         lc.readFile(extension, fr);
         System.out.println(lc.getNumLineas());
-        assertFalse(12 == lc.getNumLineas());
+        assertTrue(12 == lc.getNumLineas());
     }
 
     /**
@@ -70,7 +70,7 @@ public class AppTest
         lineCounter lc = new lineCounter();
         lc.readFile(extension, fr);
         System.out.println(lc.getNumLineas());
-        assertFalse(4 == lc.getNumLineas());
+        assertTrue(4 == lc.getNumLineas());
     }
 
     /**
@@ -84,7 +84,7 @@ public class AppTest
         lineCounter lc = new lineCounter();
         lc.readFile(extension, fr);
         System.out.println(lc.getNumLineas());
-        assertFalse(10 == lc.getNumLineas());
+        assertTrue(10 == lc.getNumLineas());
     }
     
 }
