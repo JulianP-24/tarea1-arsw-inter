@@ -15,15 +15,17 @@ public class App
         FileReader fr = new FileReader(args[1]);
         BufferedReader bf = new BufferedReader(fr);
         String extension = args[0];
-
-        long lNumeroLineas = 0;
-        String sCadena;
+        lineCounter lc = new lineCounter();
+        String sCadena = null;
         
-        while ((sCadena = bf.readLine())!=null) {
-            if(extension == "phy"){
-                lNumeroLineas++;
+        while ((sCadena = bf.readLine()) != null) {
+            if (extension.equals("phy")) {
+                lc.count(sCadena);
+            }
+            if (extension.equals("loc") && (!lc.commentLine(sCadena))){
+                lc.count(sCadena);
             }
         }
-        System.out.println("El archivo tiene: " + lNumeroLineas + " lineas");
+        System.out.println("El archivo tiene: " + lc.getNumLineas() + " lineas");
     }
 }
